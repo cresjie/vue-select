@@ -1031,10 +1031,12 @@ export default {
 
     /**
      * Clears the currently selected value(s)
+     * @emits {option:cleared}
      * @return {void}
      */
     clearSelection() {
       this.updateValue(this.multiple ? [] : null)
+      this.$emit('option:cleared')
     },
 
     /**
