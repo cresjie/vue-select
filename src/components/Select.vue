@@ -174,6 +174,7 @@ export default {
     'option:selected',
     'option:deselecting',
     'option:deselected',
+    'option:cleared',
   ],
 
   props: {
